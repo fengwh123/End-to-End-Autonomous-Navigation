@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="End-to-End navigation (description).">
+  <meta name="keywords" content="End-to-End, Reinforcement learning, planetary exploration rover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>End-to-End Rover Navigation</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/HIT.JPG">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Learning-based End-to-End Autonomous Navigation for Planetary
+              Exploration Rover</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a>Wenhao Feng</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://utkarshsinha.com">XXX</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://jonbarron.info">XXX</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://sofienbouaziz.com">XXX</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.danbgoldman.com">XXX</a><sup>2</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Harbin Institute of Technology,</span>
+              <span class="author-block"><sup>2</sup>XXX</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="XXX" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="videos/nav_38.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="overall teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser_video" width=49% muted autoplay loop>
+          <source src="videos/nav_38.mp4" type="video/mp4">
+        </video>
+        <video id="teaser_video" width=49% muted autoplay loop>
+          <source src="videos/nav_38.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Autonomous navigation plays an increasingly crucial role in rover-based planetary missions. End-to-end
+              navigation approaches developed upon deep reinforcement learning have been a rising research topic with
+              great adaptability in complex environments. However, most existing works focus on geometric obstacle
+              avoidance thus have limited capability to cope with ubiquitous non-geometric hazards in the wild, such as
+              slipping and sinking, caused by insufficient mechanical properties of the terrain. Autonomous navigation
+              in unstructured, harsh environments remains a great challenge requiring further in-depth study.
+            </p>
+            <p>
+              In this paper, a DRL-based navigation method is proposed to autonomously guide a planetary rover towards
+              goals via hazard-free paths with low wheel slip ratios. We introduce an end-to-end network architecture,
+              in which the visual perception and the wheel-terrain interaction are fused to learn the representation of
+              terrain mechanical properties implicitly and further facilitate policy learning for non-geometric hazard
+              avoidance. Our approach outperforms baseline methods in simulation evaluation with superior avoidance
+              capabilities against geometric obstacles and non-geometric hazards. Experiments conducted at a Mars
+              emulation site suggest the successful deployment of our approach on a planetary rover and the capacity of
+              dealing with locomotion risks in real-world navigation tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-sixths">
+          <h2 class="title is-3">Method</h2>
+          <div class="content has-text-justified">
+            <p>
+              We propose to incorporate both proprioceptive and visual information for locomotion tasks using a novel
+              Transformer model, LocoTransformer. Our model consists of the following two components:
+              (i) Separate modality encoders for proprioceptive and visual inputs that project both modalities into a
+              latent feature space;
+              (ii) A shared Transformer encoder that performs cross-modality attention over proprioceptive features and
+              visual features, as well as spatial attention over visual tokens to predict actions and predict values.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" , align="center" style="margin-top: -12px; margin-bottom: 32px">
+        <img src="figures/framework.svg" style="width: 85%;" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Results. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-sixths">
+          <h2 class="title is-3">Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              We evaluate our method in simulation and the real world. In simulation, we simulate a quadruped robot in a
+              set of challenging and diverse environments. In the real world, we conduct experiments in indoor scenarios
+              with obstacles and in-the-wild with complex terrain and novel obstacles.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-sixths">
+          <h2 class="title is-4">Self-attention from our shared Transformer module.</h2>
+          <div class="content has-text-justified">
+            <p>
+              We visualize the self-attention between the proprioceptive token and all visual tokens in the last layer
+              of our Transformer model. We plot the attention weight over raw visual input where warmer color represents
+              larger attention weight.
+            </p>
+          </div>
+
+          <div class="container" , align="center" style="margin-top: -12px; margin-bottom: 2px">
+            <img src="figures/att-vis-2.jpeg" style="width: 100%;" alt="">
+          </div>
+
+          <div class="content has-text-justified">
+            <p align="center">In the environment with obstacles, the agent learns to automatically attend to obstacles.
+            </p>
+          </div>
+
+          <div class="container" , align="center" style="margin-top: -12px; margin-bottom: 2px">
+            <img src="figures/att-vis-1.jpeg" style="width: 100%;" alt="">
+          </div>
+          <div class="content has-text-justified">
+            <p align="center">On challenging terrain, the agent attends to the goal destination and the local terrain in
+              an alternative manner.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="videos">
+    <div class="container is-max-desktop">
+      <!-- Method. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-five-sixths">
+          <h2 class="title is-3">Visualization in the Real World</h2>
+          <div class="content has-text-justified">
+            <p>To validate our method in different real-world scenes beyond the simulation, we conduct real-world
+              experiments in both indoor scenarios with obstacles and in-the-wild scenarios.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <p></p>
+        <h2 class="title is-4">Our LocoTransformer agent in different real-world scenarios</h2>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5">Footpath</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width=100%">
+                <source src="videos/nav_cam.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5">Courtyard</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                <source src="videos/nav_cam.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{park2021nerfies,
+  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+  title     = {Nerfies: Deformable Neural Radiance Fields},
+  journal   = {ICCV},
+  year      = {2021},
+}</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
