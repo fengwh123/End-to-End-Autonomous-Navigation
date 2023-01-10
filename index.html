@@ -6,7 +6,8 @@
   <meta name="description" content="End-to-End navigation (description).">
   <meta name="keywords" content="End-to-End, Reinforcement learning, planetary exploration rover">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>End-to-End Rover Navigation</title>
+  <title>Learning-based End-to-End Autonomous Navigation for Planetary Rovers Considering Non-Geometric Locomotion
+    Hazards</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -43,33 +44,44 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Learning-based End-to-End Autonomous Navigation for Planetary
-              Exploration Rover</h1>
+              Rovers Considering Non-Geometric Locomotion Hazards</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a>Wenhao Feng</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://utkarshsinha.com">XXX</a><sup>1</sup>,</span>
+                <a>Liang Ding</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://jonbarron.info">XXX</a><sup>1</sup>,
+                <a>Ruyi Zhou</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                <a href="http://sofienbouaziz.com">XXX</a><sup>2</sup>,
+                <a>Chongfu Xu</a><sup>1</sup>,
               </span>
               <span class="author-block">
-                <a href="https://www.danbgoldman.com">XXX</a><sup>2</sup>,
+                <a>Huaiguang Yang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Haibo Gao</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a>Guangjun Liu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a>Zongquan Deng</a><sup>1</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Harbin Institute of Technology,</span>
-              <span class="author-block"><sup>2</sup>XXX</span>
+              <span class="author-block"><sup>1</sup>State Key Laboratory of Robotics and Systems, Harbin Institute of
+                Technology,</span>
+              <span class="author-block"><sup>2</sup>Department of Aerospace Engineering, Toronto Metropolitan
+                University</span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <!-- Video Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -77,16 +89,16 @@
                     </span>
                     <span>Video</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Code Link. -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="XXX" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
               </div>
 
             </div>
@@ -96,7 +108,7 @@
     </div>
   </section>
 
-  <section class="hero teaser">
+  <!-- <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
         <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -117,7 +129,7 @@
         </video>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <section class="section">
@@ -155,8 +167,7 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Video</h2>
           <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -196,14 +207,99 @@
           <h2 class="title is-3">Results</h2>
           <div class="content has-text-justified">
             <p>
-              We evaluate our method in simulation and the real world. In simulation, we simulate a quadruped robot in a
-              set of challenging and diverse environments. In the real world, we conduct experiments in indoor scenarios
-              with obstacles and in-the-wild with complex terrain and novel obstacles.
+              We evaluate our method in simulation and the real world. In simulation, we simulate a six-wheeled rover
+              prototype in the MarsSim
+              simulator, which can provide high-fidelity physical and visual simulations for rovers and generate various
+              terrains with different mechanical properties. 
+              We then deployed the autonomous navigation model to a
+              three-wheeled rover prototype and conducted experiments in a Mars emulation site to further display the
+              practical
+              performance of our method.
             </p>
           </div>
         </div>
       </div>
       <div class="columns is-centered has-text-centered">
+        <p></p>
+        <h2 class="title is-4">Evaluations in simulation</h2>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5">Scene 1</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width=100%">
+                <source src="videos/Simulation_1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5">Scene 2</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                <source src="videos/Simulation_2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <p></p>
+        <h2 class="title is-4">Experiments in real-world scenarios</h2>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5">Scene 1</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width=100%">
+                <source src="videos/Real_1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5">Scene 2</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                <source src="videos/Real_2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5">Scene 3</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width=100%">
+                <source src="videos/Real_3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5">Scene 4</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
+                <source src="videos/Real_4.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="columns is-centered has-text-centered">
         <div class="column is-five-sixths">
           <h2 class="title is-4">Self-attention from our shared Transformer module.</h2>
           <div class="content has-text-justified">
@@ -233,13 +329,12 @@
 
         </div>
 
-      </div>
+      </div> -->
     </div>
   </section>
 
-  <section class="videos">
+  <!-- <section class="videos">
     <div class="container is-max-desktop">
-      <!-- Method. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-five-sixths">
           <h2 class="title is-3">Visualization in the Real World</h2>
@@ -250,38 +345,11 @@
         </div>
       </div>
 
-      <div class="columns is-centered has-text-centered">
-        <p></p>
-        <h2 class="title is-4">Our LocoTransformer agent in different real-world scenarios</h2>
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <h2 class="title is-5">Footpath</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <video playsinline="" autoplay="" loop="" preload="" muted="" width=100%">
-                <source src="videos/nav_cam.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <h2 class="title is-5">Courtyard</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%">
-                <source src="videos/nav_cam.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
-  </section>
+  </section> -->
 
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{park2021nerfies,
@@ -291,7 +359,7 @@
   year      = {2021},
 }</code></pre>
     </div>
-  </section>
+  </section> -->
 
 
   <footer class="footer">
